@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>John, Creative Technologist</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,9 +17,14 @@
     <header class='header'>
         <div class="container">
             <nav class="header__navigation">
-                <button>
-
-                </button>
+                <div class="header__menu-buttons">
+                    <svg class="icon icon-menu">
+                        <use xlink:href="img/sprite.svg#menu"></use>
+                    </svg>
+                    <svg class="icon icon-close">
+                        <use xlink:href="img/sprite.svg#close-menu"></use>
+                    </svg>
+                </div>
                 <ul>
                     <li><a href="#">Works</a></li>
                     <li><a href="#">Blog</a></li>
@@ -116,29 +124,32 @@
         </div>
     </section>
     <footer class="footer">
-        <ul class="footer__smm">
-            <li><a href="#">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#fb"></use>
-                </svg>
-            </a></li>
-            <li><a href="#">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#Group"></use>
-                </svg>
-            </a></li>
-            <li><a href="#">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#insta"></use>
-                 </svg>
-            </a></li>
-            <li><a href="#">
-                <svg class="icon">
-                    <use xlink:href="img/sprite.svg#Linkedin"></use>
-                </svg>
-            </a></li>
-        </ul>
-        <span>Copyright &#169;2020 All rights reserved </span>
+        <div class="container">
+            <ul class="footer__smm">
+                <li><a href="#">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#Group"></use>
+                    </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#insta"></use>
+                     </svg>
+                </a></li>
+                <li><a href="#">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#Linkedin"></use>
+                    </svg>
+                </a></li>
+            </ul>
+            <span>Copyright &#169;2020 All rights reserved </span>
+
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>

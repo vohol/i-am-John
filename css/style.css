@@ -1,0 +1,59 @@
+body {
+  color: #21243D;
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header .container {
+  min-height: 50px;
+}
+.header__menu-buttons .icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  right: 12px;
+}
+.header__navigation {
+  position: relative;
+}
+.header__navigation ul {
+  display: none;
+}
+.header__navigation ul a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.header__navigation .icon-close {
+  display: none;
+}
+.header__navigation--active {
+  position: relative;
+  padding: 50px 0;
+}
+.header__navigation--active ul {
+  display: unset;
+}
+.header__navigation--active ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.header__navigation--active ul a {
+  display: block;
+  text-align: center;
+}
+.header__navigation--active .icon-close {
+  display: unset;
+}
+.header__navigation--active .icon-menu {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

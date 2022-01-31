@@ -1,0 +1,71 @@
+$color-primary: #FF6464;
+$color-secondry: #00A8CC;
+$color-dark: #21243D;
+$color-black: #000; 
+$color-light: #8695A4;
+$color-background-light: #EDF7FA;
+$color-background-blue: #142850;
+
+body {
+    color: $color-dark;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+    .container {
+        min-height: 50px;
+    }
+    &__menu-buttons {
+        .icon {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 12px;
+            right: 12px;
+        }
+    }
+    &__navigation {
+        position: relative;
+        ul {
+            display: none;
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 20px;
+                color: $color-black;
+            }
+        }
+        .icon-close {
+            display: none;
+        }
+    }
+    &__navigation--active {
+        position: relative;
+        padding: 50px 0;
+        ul {
+            display: unset;
+            li:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            a {
+                display: block;
+                text-align: center;
+            }
+
+        }
+        .icon-close {
+            display: unset;
+        }
+        .icon-menu {
+            display: none;
+        }
+
+    }
+}
