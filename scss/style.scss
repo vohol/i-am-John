@@ -1,7 +1,8 @@
 $color-primary: #FF6464;
 $color-secondry: #00A8CC;
 $color-dark: #21243D;
-$color-black: #000; 
+$color-black: #000;
+$color-white: #fff;
 $color-light: #8695A4;
 $color-background-light: #EDF7FA;
 $color-background-blue: #142850;
@@ -21,6 +22,7 @@ body {
 .header {
     .container {
         min-height: 50px;
+        margin-bottom: 33px;
     }
     &__menu-buttons {
         .icon {
@@ -29,6 +31,12 @@ body {
             height: 30px;
             top: 12px;
             right: 12px;
+            cursor: pointer;
+            transition-property: all; 
+            transition-duration: 0.3s;
+            &:hover {
+                fill: $color-secondry;
+            }
         }
     }
     &__navigation {
@@ -40,6 +48,11 @@ body {
                 font-weight: 500;
                 font-size: 20px;
                 color: $color-black;
+                transition-property: color; 
+                transition-duration: 0.3s;
+                &:hover {
+                    color: $color-secondry;
+                }
             }
         }
         .icon-close {
@@ -67,5 +80,72 @@ body {
             display: none;
         }
 
+    }
+}
+
+.short-description {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &__photo {
+        margin-bottom: 43px;
+        img {
+            position: relative;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            // &::after {
+            //     position: absolute;
+            //     content: ' ';
+            //     background-color: $color-background-light;
+            //     top: 5px;
+            //     right: 5px;
+            // }
+        }
+        
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            width: 312px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 21px;
+        }
+        p {
+            width: 328px;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            margin-bottom: 27px;
+        }
+        button {
+            padding: 15px 20px 17px;
+            font-weight: 500;
+            font-size: 20px;
+            color: $color-white;
+            background-color: $color-primary;
+            border-radius: 2px;
+            border: 0;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 0.3s;
+            margin-bottom: 59px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.blog {
+    .container{
+        background-color: $color-background-light;
     }
 }
