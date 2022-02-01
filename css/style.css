@@ -175,4 +175,60 @@ body {
   line-height: 23px;
 }
 
+.works .container {
+  margin-top: 25px;
+}
+.works__header {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.works__catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.works .work-card {
+  max-width: 344px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.works .work-card:not(:last-child) {
+  margin-bottom: 17px;
+}
+.works .work-card img {
+  width: 339px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 17px;
+}
+.works .work-card__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+.works .work-card__info {
+  margin-bottom: 24px;
+}
+.works .work-card__info time {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background-color: #142850;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  margin-right: 22px;
+}
+.works .work-card__info span {
+  font-size: 16px;
+  color: #8695A4;
+}
+.works .work-card__txt {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 17px;
+}
+
 /*# sourceMappingURL=style.css.map */

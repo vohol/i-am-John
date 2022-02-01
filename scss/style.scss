@@ -203,3 +203,63 @@ body {
         }
     }
 }
+
+.works {
+    .container {
+        margin-top: 25px;
+    }
+    &__header {
+        font-size: 18px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    &__catalog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    .work-card {
+        max-width: 344px;
+        border-bottom: 1px solid #E0E0E0;
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+        img {
+            width: 339px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 17px;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 16px;
+
+        }
+        &__info {
+            margin-bottom: 24px;
+            time {
+                display: inline-block;
+                padding: 6px 12px;
+                border-radius: 16px;
+                background-color: $color-background-blue;
+                color: $color-white;
+                font-weight: 900;
+                font-size: 16px;
+                margin-right: 22px;
+            }
+            span {
+                font-size: 16px;
+                color: $color-light;
+            }
+        }
+        &__txt {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 17px;
+        }
+    }
+}
+
