@@ -2,6 +2,7 @@ body {
   color: #21243D;
   font-family: "Heebo", sans-serif;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .container {
@@ -109,7 +110,7 @@ body {
   color: #fff;
   background-color: #FF6464;
   border-radius: 2px;
-  border: 0;
+  border: none;
   cursor: pointer;
   transition-property: all;
   transition-duration: 0.3s;
@@ -121,6 +122,57 @@ body {
 
 .blog .container {
   background-color: #EDF7FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+.blog__header {
+  margin: 19px 0 24px;
+}
+.blog__header span {
+  font-size: 18px;
+}
+.blog__header span:last-child {
+  display: none;
+}
+.blog__posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 38px;
+}
+.blog .card-post {
+  padding: 12px 21px 22px 19px;
+  background-color: #fff;
+  max-width: 354px;
+  min-height: 266px;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+}
+.blog .card-post:not(:last-child) {
+  margin-bottom: 17px;
+}
+.blog .card-post__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+.blog .card-post__info {
+  margin-bottom: 19px;
+}
+.blog .card-post__info time, .blog .card-post__info span {
+  font-size: 16px;
+}
+.blog .card-post__info time {
+  padding-right: 24px;
+  margin-right: 24px;
+  border-right: solid 1px #000;
+}
+.blog .card-post__content {
+  font-size: 16px;
+  line-height: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
